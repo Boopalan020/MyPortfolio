@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { Download, Menu, X } from "lucide-react";
 import { contact } from "@/data/resume";
 import ThemeToggle from "@/components/ThemeToggle";
+import Logo from "@/components/Logo";
 
 const NAV_LINKS = [
   { href: "#about", label: "About" },
@@ -49,8 +50,8 @@ export default function Navbar() {
       }`}
     >
       <nav className="section-container flex h-16 items-center justify-between">
-        <a href="#" className="font-mono text-lg font-semibold text-foreground">
-          Boopalan<span className="text-accent">.</span>
+        <a href="#" aria-label="Boopalan M — home">
+          <Logo size={40} />
         </a>
 
         <ul className="hidden items-center gap-8 md:flex">

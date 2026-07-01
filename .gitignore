@@ -46,3 +46,4 @@ next-env.d.ts
 # raw source assets (not used by the built site)
 /Author Photo*.jpg
 /M Boopalan - CV*.pdf
+/BM-logo-*.png
