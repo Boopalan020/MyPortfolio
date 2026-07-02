@@ -32,6 +32,7 @@ export interface EducationEntry {
   degree: string;
   school: string;
   period: string;
+  score: string;
 }
 
 export interface FeaturedProject {
@@ -229,16 +230,19 @@ export const education: EducationEntry[] = [
     degree: "Bachelor of Computer Science & Engineering",
     school: "Kongu Engineering College, Perundurai, Erode, India",
     period: "2017 – 2021",
+    score: "9.03 CGPA",
   },
   {
     degree: "Higher Secondary School (Computer Science)",
     school: "Malar Matric Higher Secondary School, Paramathi, Velur",
     period: "2015 – 2017",
+    score: "94.5%",
   },
   {
     degree: "SSLC",
     school: "Government Boys Higher Secondary School, Sankagiri, Salem",
     period: "2015",
+    score: "93.2%",
   },
 ];
 
