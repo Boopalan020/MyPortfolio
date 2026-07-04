@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, JetBrains_Mono } from "next/font/google";
 import Script from "next/script";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 import { contact, summary } from "@/data/resume";
 import LiquidEther from "@/components/LiquidEther";
@@ -53,6 +54,7 @@ export default function RootLayout({
         </Script>
         <LiquidEther />
         {children}
+        <Analytics />
       </body>
     </html>
   );
