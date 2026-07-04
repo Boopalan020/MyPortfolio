@@ -44,6 +44,18 @@ export interface FeaturedProject {
   tags: string[];
 }
 
+export interface Certification {
+  name: string;
+  issuer: string;
+  issueDate: string;
+  expiryDate?: string;
+  credentialId?: string;
+  description: string;
+  skills: string[];
+  badgeImage: string;
+  credentialUrl: string;
+}
+
 export const contact: ContactInfo = {
   name: "Boopalan M",
   title: "SAP ABAP & BTP Consultant",
@@ -316,5 +328,29 @@ export const featuredProjects: FeaturedProject[] = [
       "Function Modules integrating SD and MM",
     ],
     tags: ["S/4HANA", "MM", "SD", "Adobe Forms", "ABAP"],
+  },
+];
+
+export const certifications: Certification[] = [
+  {
+    name: "SAP Certified - Back-End Developer - ABAP Cloud",
+    issuer: "SAP",
+    issueDate: "Jul 2026",
+    expiryDate: "Jul 2027",
+    credentialId: "C_ABAPD_2601",
+    description:
+      "Verifies familiarity with core ABAP programming principles, the ability to write applications based on the ABAP RESTful Application Programming Model (RAP), and an overall understanding of Clean Core principles for building custom extensions in SAP S/4HANA.",
+    skills: [
+      "Advanced Business Application Programming (ABAP)",
+      "Application Development",
+      "Cloud Application Development",
+      "Development Environment",
+      "Full Stack Development",
+      "Object-Oriented Design",
+      "Programming Environments",
+      "SQL (Programming Language)",
+    ],
+    badgeImage: "https://images.credly.com/size/680x680/images/5489be1c-ce49-4cf3-8b24-eee50e5259be/blob",
+    credentialUrl: "https://www.credly.com/earner/earned/share/02aa171b-26fa-4de8-80c2-0f7df7b720c8",
   },
 ];
