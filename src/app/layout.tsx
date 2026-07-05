@@ -8,6 +8,8 @@ import LiquidEther from "@/components/LiquidEther";
 
 const THEME_INIT_SCRIPT = `(function(){try{var t=localStorage.getItem('theme');var theme=(t==='light'||t==='dark')?t:(window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark');document.documentElement.dataset.theme=theme;}catch(e){}})();`;
 
+const SITE_URL = "https://my-portfolio-chi-swart-90.vercel.app";
+
 const inter = Inter({
   variable: "--font-sans",
   subsets: ["latin"],
@@ -19,6 +21,7 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: `${contact.name} — ${contact.title}`,
   description: summary,
   keywords: [
@@ -30,11 +33,36 @@ export const metadata: Metadata = {
     "S/4HANA",
     "Portfolio",
   ],
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     title: `${contact.name} — ${contact.title}`,
     description: summary,
     type: "profile",
+    url: SITE_URL,
+    siteName: `${contact.name} — Portfolio`,
+    locale: "en_US",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: `${contact.name} — ${contact.title}`,
+    description: summary,
+  },
+};
+
+const personJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: contact.name,
+  jobTitle: contact.title,
+  url: SITE_URL,
+  email: `mailto:${contact.email}`,
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: contact.location,
+  },
+  sameAs: [contact.linkedinUrl],
 };
 
 export default function RootLayout({
@@ -52,6 +80,10 @@ export default function RootLayout({
         <Script id="theme-init" strategy="beforeInteractive">
           {THEME_INIT_SCRIPT}
         </Script>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}
+        />
         <LiquidEther />
         {children}
         <Analytics />
