@@ -49,6 +49,9 @@ export const metadata: Metadata = {
     title: `${contact.name} — ${contact.title}`,
     description: summary,
   },
+  verification: {
+    google: "RkIvl_qZk_hbw_zEegKtrgaFc2SCplKWXID-SvRPnp8",
+  },
 };
 
 const personJsonLd = {
