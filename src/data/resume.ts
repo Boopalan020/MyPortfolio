@@ -351,6 +351,24 @@ export const certifications: Certification[] = [
       "SQL (Programming Language)",
     ],
     badgeImage: "https://images.credly.com/size/680x680/images/5489be1c-ce49-4cf3-8b24-eee50e5259be/blob",
-    credentialUrl: "https://www.credly.com/earner/earned/share/02aa171b-26fa-4de8-80c2-0f7df7b720c8",
+    credentialUrl: "https://www.credly.com/badges/02aa171b-26fa-4de8-80c2-0f7df7b720c8/public_url",
+  },
+  {
+    name: "SAP Certified - Solution Architect - SAP BTP",
+    issuer: "SAP",
+    issueDate: "Jul 2026",
+    expiryDate: "Jul 2027",
+    credentialId: "P_BTPA",
+    description:
+      "Verifies the ability to perform an SAP Solution Architect role with SAP BTP — developing and implementing solutions that meet business requirements, ensuring technical feasibility and economic viability, and translating organizational requirements into technical solution designs.",
+    skills: [
+      "Analytics",
+      "DevOps Architecture",
+      "Enterprise Application Integration",
+      "SAP Cloud Suite Portfolio",
+      "Solution Architecture",
+    ],
+    badgeImage: "https://images.credly.com/size/680x680/images/8cc68218-4b20-421f-803b-fa3769a9503f/blob",
+    credentialUrl: "https://www.credly.com/badges/956fbfb6-908f-4a45-8f11-9f0db55b0a03/public_url",
   },
 ];
