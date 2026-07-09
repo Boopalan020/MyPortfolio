@@ -4,7 +4,7 @@ import Script from "next/script";
 import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 import { contact, summary } from "@/data/resume";
-import LiquidEther from "@/components/LiquidEther";
+import ParticleField from "@/components/ParticleField";
 
 const THEME_INIT_SCRIPT = `(function(){try{var t=localStorage.getItem('theme');var theme=(t==='light'||t==='dark')?t:(window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark');document.documentElement.dataset.theme=theme;}catch(e){}})();`;
 
@@ -87,7 +87,7 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}
         />
-        <LiquidEther />
+        <ParticleField />
         {children}
         <Analytics />
       </body>
