@@ -371,4 +371,23 @@ export const certifications: Certification[] = [
     badgeImage: "https://images.credly.com/size/680x680/images/8cc68218-4b20-421f-803b-fa3769a9503f/blob",
     credentialUrl: "https://www.credly.com/badges/956fbfb6-908f-4a45-8f11-9f0db55b0a03/public_url",
   },
+  {
+    name: "SAP Certified - SAP Build Developer",
+    issuer: "SAP",
+    issueDate: "Jul 2026",
+    expiryDate: "Jul 2027",
+    credentialId: "C_LCNC",
+    description:
+      "Validates proven skills in designing and developing business applications using SAP Build Apps, including connecting to SAP systems, modeling business data, and automating processes with SAP Build Process Automation. Also covers integrating applications and workflows via APIs and building digital workspaces with SAP Build Work Zone.",
+    skills: [
+      "Application Development",
+      "Business Process Automation",
+      "Cloud Application Development",
+      "Development Environment",
+      "SAP Business Technology Platform",
+      "User Interface (UI) Design",
+    ],
+    badgeImage: "https://images.credly.com/size/680x680/images/8ec1d8a3-1ebc-411b-855e-e56538f91b7d/blob",
+    credentialUrl: "https://www.credly.com/badges/128d2007-4b9f-4a48-a1af-8626fa369d08/public_url",
+  },
 ];
