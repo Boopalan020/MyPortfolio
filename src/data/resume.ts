@@ -56,6 +56,13 @@ export interface Certification {
   credentialUrl: string;
 }
 
+export interface Testimonial {
+  quote: string;
+  name: string;
+  title: string;
+  company: string;
+}
+
 export const contact: ContactInfo = {
   name: "Boopalan M",
   title: "SAP ABAP & BTP Consultant",
@@ -389,5 +396,22 @@ export const certifications: Certification[] = [
     ],
     badgeImage: "https://images.credly.com/size/680x680/images/8ec1d8a3-1ebc-411b-855e-e56538f91b7d/blob",
     credentialUrl: "https://www.credly.com/badges/128d2007-4b9f-4a48-a1af-8626fa369d08/public_url",
+  },
+];
+
+export const testimonials: Testimonial[] = [
+  {
+    quote:
+      "I've had the opportunity to work closely with Boopalan and have seen him grow into a dependable and capable SAP consultant. He is hardworking, quick to learn, and always willing to take on new challenges, even when they are outside his comfort zone. What stands out most about Boopalan is his positive attitude and ownership. He approaches tasks with dedication, asks the right questions, and consistently puts in the effort needed to deliver quality outcomes. Whether it is ABAP development, RAP, CAPM, or working on complex project requirements, he is always eager to learn and contribute.",
+    name: "Goutham Arumugam",
+    title: "Practice Lead, BTP Architect",
+    company: "IT-Resonance Inc",
+  },
+  {
+    quote:
+      "I am pleased to recommend Boopalan, a highly motivated SAP ABAP Consultant with exceptional technical expertise and strong communication skills. During our collaboration on an S/4HANA private cloud project, Boopalan played a pivotal role in working on a custom solution that integrated a third-party FTP server. His extensive knowledge of RICEFW objects has enabled him to consistently deliver high-quality results, navigate complex challenges effortlessly, and propose innovative solutions that helped us meet project milestones on schedule.",
+    name: "Gaja Abhinenyu Amsaraju",
+    title: "SAP BTP Architect",
+    company: "Kaar Technologies",
   },
 ];
