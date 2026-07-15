@@ -5,10 +5,9 @@ import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 import { contact, summary } from "@/data/resume";
 import ParticleField from "@/components/ParticleField";
+import { SITE_URL } from "@/lib/site-config";
 
 const THEME_INIT_SCRIPT = `(function(){try{var t=localStorage.getItem('theme');var theme=(t==='light'||t==='dark')?t:(window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark');document.documentElement.dataset.theme=theme;}catch(e){}})();`;
-
-const SITE_URL = "https://my-portfolio-chi-swart-90.vercel.app";
 
 const inter = Inter({
   variable: "--font-sans",
