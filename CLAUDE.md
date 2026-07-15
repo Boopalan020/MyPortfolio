@@ -22,6 +22,10 @@ Append an entry to the `testimonials` array in `src/data/resume.ts` (`Testimonia
 
 To source recommendation text from LinkedIn, see the `linkedin-recommendation-extraction` memory — use `claude-in-chrome` on `linkedin.com/in/{handle}/details/recommendations/` rather than trying an unauthenticated fetch.
 
+## Working from a mobile / remote session
+
+When changes originate from a Claude Code on the web session (not an interactive local session where the user is present to say "push it"), always create a feature branch and open a pull request rather than pushing directly to `main`. This gives a Vercel Preview Deployment to review before the change reaches the live site. Merge to `main` — and the resulting production deploy — should only happen after explicit user approval of the preview.
+
 ## Verifying changes
 
 - `npx tsc --noEmit` and `npm run lint` before considering a change done.
