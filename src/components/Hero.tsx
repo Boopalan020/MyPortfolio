@@ -40,13 +40,16 @@ export default function Hero() {
         className="section-container grid items-center gap-12 lg:grid-cols-[1.15fr_0.85fr]"
       >
         <div className="order-2 lg:order-1">
-          <motion.p
+          <motion.a
+            href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(contact.location)}`}
+            target="_blank"
+            rel="noreferrer"
             variants={item}
-            className="mb-5 inline-flex items-center gap-2 rounded-full border border-glass-border bg-glass px-4 py-1.5 font-mono text-sm text-muted shadow-[var(--glass-shadow)] backdrop-blur-md backdrop-saturate-150"
+            className="mb-5 inline-flex items-center gap-2 rounded-full border border-glass-border bg-glass px-4 py-1.5 font-mono text-sm text-muted shadow-[var(--glass-shadow)] backdrop-blur-md backdrop-saturate-150 transition-colors hover:border-accent/50 hover:text-accent"
           >
             <MapPin size={14} className="text-accent" />
             {contact.location}
-          </motion.p>
+          </motion.a>
 
           <motion.h1
             variants={item}
