@@ -3,7 +3,7 @@ import { Inter, JetBrains_Mono } from "next/font/google";
 import Script from "next/script";
 import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
-import { contact, summary } from "@/data/resume";
+import { contact, summary, experience, education } from "@/data/resume";
 import ParticleField from "@/components/ParticleField";
 import { SITE_URL } from "@/lib/site-config";
 
@@ -58,13 +58,35 @@ const personJsonLd = {
   "@type": "Person",
   name: contact.name,
   jobTitle: contact.title,
+  description: summary,
   url: SITE_URL,
+  image: `${SITE_URL}/images/profile-v2.jpg`,
   email: `mailto:${contact.email}`,
   address: {
     "@type": "PostalAddress",
     addressLocality: contact.location,
+    addressCountry: "IN",
   },
-  sameAs: [contact.linkedinUrl],
+  worksFor: {
+    "@type": "Organization",
+    name: experience[0].company,
+  },
+  alumniOf: {
+    "@type": "CollegeOrUniversity",
+    name: education[0].school,
+  },
+  knowsAbout: [
+    "SAP ABAP",
+    "SAP BTP",
+    "SAP S/4HANA",
+    "SAP CAP",
+    "SAPUI5",
+    "ABAP CDS",
+    "OData",
+    "SAP Build Process Automation",
+    "Adobe Forms",
+  ],
+  sameAs: [contact.linkedinUrl, contact.githubUrl],
 };
 
 export default function RootLayout({

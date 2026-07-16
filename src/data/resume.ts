@@ -6,6 +6,7 @@ export interface ContactInfo {
   phone: string;
   linkedin: string;
   linkedinUrl: string;
+  githubUrl: string;
   resumeUrl: string;
 }
 
@@ -71,6 +72,7 @@ export const contact: ContactInfo = {
   phone: "+91 88259 71005",
   linkedin: "linkedin.com/in/boopalan020",
   linkedinUrl: "https://www.linkedin.com/in/boopalan020",
+  githubUrl: "https://github.com/Boopalan020",
   resumeUrl: "/Boopalan_M_Resume.pdf",
 };
 
