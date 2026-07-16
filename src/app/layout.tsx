@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, JetBrains_Mono } from "next/font/google";
 import Script from "next/script";
 import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 import { contact, summary, experience, education } from "@/data/resume";
 import ParticleField from "@/components/ParticleField";
@@ -111,6 +112,7 @@ export default function RootLayout({
         <ParticleField />
         {children}
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
