@@ -414,6 +414,6 @@ export const testimonials: Testimonial[] = [
       "I am pleased to recommend Boopalan, a highly motivated SAP ABAP Consultant with exceptional technical expertise and strong communication skills. During our collaboration on an S/4HANA private cloud project, Boopalan played a pivotal role in working on a custom solution that integrated a third-party FTP server. His extensive knowledge of RICEFW objects has enabled him to consistently deliver high-quality results, navigate complex challenges effortlessly, and propose innovative solutions that helped us meet project milestones on schedule.",
     name: "Gaja Abhinenyu Amsaraju",
     title: "SAP BTP Architect",
-    company: "Kaar Technologies",
+    company: "IT-Resonance Inc",
   },
 ];
