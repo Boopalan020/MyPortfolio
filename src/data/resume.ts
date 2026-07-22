@@ -359,7 +359,7 @@ export const certifications: Certification[] = [
       "Programming Environments",
       "SQL (Programming Language)",
     ],
-    badgeImage: "https://images.credly.com/size/680x680/images/5489be1c-ce49-4cf3-8b24-eee50e5259be/blob",
+    badgeImage: "/images/certs/abap-cloud-backend-developer.png",
     credentialUrl: "https://www.credly.com/badges/02aa171b-26fa-4de8-80c2-0f7df7b720c8/public_url",
   },
   {
@@ -377,7 +377,7 @@ export const certifications: Certification[] = [
       "SAP Cloud Suite Portfolio",
       "Solution Architecture",
     ],
-    badgeImage: "https://images.credly.com/size/680x680/images/8cc68218-4b20-421f-803b-fa3769a9503f/blob",
+    badgeImage: "/images/certs/btp-solution-architect.png",
     credentialUrl: "https://www.credly.com/badges/956fbfb6-908f-4a45-8f11-9f0db55b0a03/public_url",
   },
   {
@@ -396,7 +396,7 @@ export const certifications: Certification[] = [
       "SAP Business Technology Platform",
       "User Interface (UI) Design",
     ],
-    badgeImage: "https://images.credly.com/size/680x680/images/8ec1d8a3-1ebc-411b-855e-e56538f91b7d/blob",
+    badgeImage: "/images/certs/sap-build-developer.png",
     credentialUrl: "https://www.credly.com/badges/128d2007-4b9f-4a48-a1af-8626fa369d08/public_url",
   },
 ];
